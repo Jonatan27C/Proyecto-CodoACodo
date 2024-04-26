@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="shortcut icon" href="../FlixMovies_Icono.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body class="paginaRegistro">
+    <header class="headerRegistro">
+        <nav>
+            <a href="../index.html">
+                <img src="../FlixMovies_Icono.ico" alt="Logo de FlixMovies">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="cartaRegistro">
+            <h1>Registro</h1>
+            <!-- falta colocar method para que la info viaje de manera oculta -->
+            <form action=""> 
+                <div>
+                    <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required>
+                </div>
+
+                <div>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                </div>
+
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                </div>
+
+                <div>
+                    <input type="date" name="Nacimiento" id="nacimiento" placeholder="dd/mm/aaaa">
+                </div>
+
+                <div>
+                    <label for="">País</label>
+                    <select name="" id="" class="seleccionPais">
+                        <option value="AR">Argentina</option>
+                        <option value="CL">Chile</option>
+                        <option value="PE">Perú</option>
+                        <option value="MX">Mexico</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="termino">Acepta terminos y condiciones</label>
+                    <input type="checkbox" name="termino" id="termino">
+                </div>
+
+                <div>  
+                    <input type="reset" value="Limpiar campos">
+                    <input type="submit" value="Registrarse">
+                </div>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
