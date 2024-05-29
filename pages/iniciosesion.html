@@ -7,9 +7,12 @@
     <link rel="shortcut icon" href="../FlixMovies_Icono.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/estilos.css">
+
+    
+
 </head>
-<body>
-    <header>
+<body class="paginaRegistro">
+    <header class="inicioSesionHeader">
         <nav>
             <a href="../index.html">
                 <img src="../FlixMovies_Icono.ico" alt="Logo de FlixMovies">
@@ -17,23 +20,26 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="sesionInicio">
             <h1>Inciar Sesión</h1>
-            <div>
-                <input type="email" name="email" id="email" placeholder="Email">
-            </div>
-            <div>
-                <input type="password" name="password" id="password" placeholder="Contraseña">
-            </div>
-            <div>
-                <input type="submit" value="Iniciar Sesión">
-            </div>
+            <form class="formularioI" action="">
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                </div>
+                <div>
+                    <input type="submit" value="Iniciar Sesión">
+                </div>
+            </form>
+            
             
 
             <div><p>¿No tienes un cuenta? <a href="../pages/registrarse.html" class="enlace">Registrate</a></p>
             </div>
         </section>
     </main>
-    
+    <script src="../js/script.js"></script>
 </body>
 </html>

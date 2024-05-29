@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="../FlixMovies_Icono.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/estilos.css">
+
+    
+
 </head>
 <body class="paginaRegistro">
     <header class="headerRegistro">
@@ -20,25 +23,30 @@
         <section class="cartaRegistro">
             <h1>Registro</h1>
             <!-- falta colocar method para que la info viaje de manera oculta -->
-            <form action=""> 
+            <form action="" > 
                 <div>
-                    <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required>
+                    <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" >
+                    <div id="NombreError" class="error-message"></div>
                 </div>
 
                 <div>
-                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" >
+                    <div id="apellidoError" class="error-message"></div>
                 </div>
 
                 <div>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="email" name="email" id="email" placeholder="Email" >
+                    <div id="emailError" class="error-message"></div>
                 </div>
 
                 <div>
-                    <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                    <input type="password" name="password" id="password" placeholder="Contraseña" >
+                    <div id="passwordError" class="error-message"></div>
                 </div>
 
                 <div>
                     <input type="date" name="Nacimiento" id="nacimiento" placeholder="dd/mm/aaaa">
+                    <div id="nacimientoError" class="error-message"></div>
                 </div>
 
                 <div>
@@ -49,11 +57,13 @@
                         <option value="PE">Perú</option>
                         <option value="MX">Mexico</option>
                     </select>
+                    <div id="paisError" class="error-message"></div>
                 </div>
 
                 <div>
                     <label for="termino">Acepta terminos y condiciones</label>
                     <input type="checkbox" name="termino" id="termino">
+                    <div id="terminoError" class="error-message"></div>
                 </div>
 
                 <div>  
@@ -63,6 +73,6 @@
             </form>
         </section>
     </main>
-    
+    <script src="../js/script.js"></script>
 </body>
 </html>
